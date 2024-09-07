@@ -1,0 +1,28 @@
+Reading symbols from a.out...
+(No debugging symbols found in a.out)
+(gdb) disassemble _start
+Dump of assembler code for function _start:
+   0x000000000040101c <+0>:     mov    $0x4,%rax
+   0x0000000000401023 <+7>:     mov    $0x1,%rbx
+   0x000000000040102a <+14>:    movabs $0x401000,%rcx
+   0x0000000000401034 <+24>:    mov    $0x1c,%rdx
+   0x000000000040103b <+31>:    int    $0x80
+   0x000000000040103d <+33>:    mov    $0x1,%rax
+   0x0000000000401044 <+40>:    mov    $0x0,%rbx
+   0x000000000040104b <+47>:    int    $0x80
+End of assembler dump.
+(gdb) 
+
+Reading symbols from a.out...
+(No debugging symbols found in a.out)
+(gdb) disassemble _start
+Dump of assembler code for function _start:
+   0x0804901c <+0>:     mov    $0x4,%eax
+   0x08049021 <+5>:     mov    $0x1,%ebx
+   0x08049026 <+10>:    mov    $0x8049000,%ecx
+   0x0804902b <+15>:    mov    $0x1c,%edx
+   0x08049030 <+20>:    int    $0x80
+   0x08049032 <+22>:    mov    $0x1,%eax
+   0x08049037 <+27>:    mov    $0x0,%ebx
+   0x0804903c <+32>:    int    $0x80
+End of assembler dump.

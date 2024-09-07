@@ -1,0 +1,26 @@
+mkdir Work
+cd Work
+mkdir BNO
+mkdir "Laboratornaya №1!"
+chmod a-rxw Laboratornaya\ №1\!/
+chmod gu+rxw Laboratornaya\ №1\!/
+chmod o+w Laboratornaya\ №1\!/
+chmod a-rxw BNO/
+chmod u+w BNO/
+> "Text @1"
+> "Text \$2"
+> "Text #3"
+echo -e "Птица говорун отличается умом и сообразительностью! \n Отличается умом, отличается сообразительностью..." > Text\ @1
+cat Text\ @1 > Text\ \$2
+mv Text\ \$2  Laboratornaya\ №1\!
+sudo cp Text\ @1 BNO/
+gzip Text\ \$2
+gzip Text\ #3
+tar -cf MyArchive Text\ @1.gz Text\ #3.gz 
+gzip -d Text\ @1.gz
+gzip -d Text\ #3.gz
+tail Text\ @1 >> Text\ #3 
+echo "Будь осторожен! Преступник вооружен!" >> Text\ #3 
+sudo touch BNO/Result_One
+sudo tac Text\ @1 >> BNO/Result_One
+mv BNO/Result_One BNO/Result_two
