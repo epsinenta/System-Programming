@@ -24,3 +24,6 @@ echo "Будь осторожен! Преступник вооружен!" >> Te
 sudo touch BNO/Result_One
 sudo tac Text\ @1 >> BNO/Result_One
 mv BNO/Result_One BNO/Result_two
+find ../BNO -name 'T*' -type f -exec cat {} + >> Result_3
+uname -a >> Result_3 
+date >> Result_3 
